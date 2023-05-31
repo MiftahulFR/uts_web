@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrinkDash</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;0,600;0,700;1,100;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="img/logo3.jpg" alt="logo" />Drink<span>Dash</span></span></a>
+      
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">AboutUs</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Ayo Nikmati Minuman <span>Segar</span></h1>
+        <p>
+            Temukan pilihan minuman segar terbaik hanya di DrinkDash. 
+            Kami menyajikan berbagai macam minuman yang akan memanjakan lidah Anda. 
+            Dengan kualitas terbaik dan rasa yang nikmat, kami hadir untuk memastikan Anda tetap terjaga dan puas. 
+            Bersiaplah untuk menjelajahi dunia minuman yang menyegarkan!
+        </p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>About</span> Us</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/about3.jpg" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Why Drink<span>Dash</span>?</h3>
+          <p>
+            Di DrinkDash, kami memahami keinginan Anda untuk menikmati minuman yang menyegarkan dan berkualitas. 
+            Setiap minuman kami dipersiapkan dengan cinta dan perhatian, menggunakan bahan-bahan segar dan pilihan terbaik. 
+            Dengan gabungan rasa yang unik dan desain yang menawan, kami menghadirkan pengalaman minum yang tak terlupakan. 
+            Kami hadir untuk memenuhi kebutuhan minuman Anda dan menjaga kepuasan Anda tetap terjaga setiap saat. 
+            Bersiaplah untuk menemukan minuman yang sempurna di DrinkDash!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Our</span> Menu</h2>
+      <p>
+        Temukan ragam menu minuman yang menggugah selera di DrinkDash.
+        Kami menawarkan berbagai pilihan minuman yang memuaskan segala selera.
+        Setiap minuman dipersiapkan dengan teliti oleh ahli kami, 
+        menghasilkan cita rasa yang sempurna dan kualitas yang tak tertandingi.
+        Jelajahi menu kami dan temukan minuman favorit Anda!
+      </p>
+
+      <div class="row">
+        <div class="menu-card" onclick="redirectToPurchase('lemonade')">
+          <img src="img/lemonade.jpg" alt="lemonade" class="menu-card-img" />
+          <h3 class="menu-card-title">Lemonade</h3>
+          <p class="menu-card-price">IDR10K-15K</p>
+        </div>
+        <div class="menu-card" onclick="redirectToPurchase('juice')">
+          <img src="img/juice.jpg" alt="juice" class="menu-card-img" />
+          <h3 class="menu-card-title">Juice</h3>
+          <p class="menu-card-price">IDR25K-30K</p>
+        </div>
+        <div class="menu-card" onclick="redirectToPurchase('tea')">
+          <img src="img/tea.jpg" alt="tea" class="menu-card-img" />
+          <h3 class="menu-card-title">Ice Tea</h3>
+          <p class="menu-card-price">IDR15K-25K</p>
+        </div>
+        <div class="menu-card"onclick="redirectToPurchase('coffee')">
+          <img src="img/coffee.jpg" alt="coffee" class="menu-card-img" />
+          <h3 class="menu-card-title">Coffee</h3>
+          <p class="menu-card-price">IDR20K-40K</p>
+        </div>
+        <div class="menu-card" onclick="redirectToPurchase('milkshake')">
+          <img src="img/milkshake.jpg" alt="milkshake" class="menu-card-img" />
+          <h3 class="menu-card-title">Milkshake</h3>
+          <p class="menu-card-price">IDR20K-30K</p>
+        </div>
+        <div class="menu-card" onclick="redirectToPurchase('softdrink')">
+          <img src="img/softdrink.jpg" alt="softdrink" class="menu-card-img" />
+          <h3 class="menu-card-title">Soft Drink</h3>
+          <p class="menu-card-price">IDR5K-15K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+        <h2><span>Contact</span> Us</h2>
+      <p>
+        Jika Anda memiliki pertanyaan, saran, atau ingin berhubungan dengan kami, jangan ragu untuk menghubungi kami. 
+        Kami siap membantu Anda dengan senang hati. Isi formulir di bawah ini atau hubungi kami melalui kontak di bawah ini. 
+        Kami akan segera merespons Anda.
+      </p>
+
+      <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7895660046597!2d106.96988247431413!3d-6.
+        15893196036255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+        1!3m3!1m2!1s0x2e698b4f86ba93ef%3A0xcf58e590de21713a!2sUniversitas%20Esa%20Unggul%20Kampus%20Bekasi
+        !5e0!3m2!1sid!2sid!4v1685456585643!5m2!1sid!2sid" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        class="map"></iframe>
+
+        <form action="">
+            <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="nama">
+            </div>
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="email">
+            </div>
+            <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="no hp">
+            </div>
+            <button type="submit" class="btn">
+              kirim pesan  
+            </button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer start -->
+    <footer>
+        <div class="social">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+
+        <div class="link">
+            <a href="#home">Home</a>
+            <a href="#about">AboutUs</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="credit">
+            <p>Created by <a href="">MiftahulFikriR.Al-B.</a>
+            | &copy; 2023.</p>
+        </div>
+    </footer>
+    <!-- Footer start -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Java Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
